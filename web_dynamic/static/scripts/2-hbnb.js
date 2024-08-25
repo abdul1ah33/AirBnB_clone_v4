@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('.amenities h4').text(amenitiesList);
   });
 
-  $.get('http://0.0.0.0:5001/api/v1/status/', function (data) {
+  $.get('http://127.0.0.1:5001/2-hbnb/', function (data) {
     if (data.status === 'OK') {
       $('#api_status').addClass('available');
     } else {

@@ -9,20 +9,21 @@ header .logo {
     left: 20px;
     height: 100%;
 }
-.available {
-    background-color: #ff545f !important; /* Red background when available */
-}
 #api_status {
-  position: absolute; /* Positioned relative to the nearest positioned ancestor (header in this case) */
-  top: 50%; /* Center vertically */
+  position: absolute; /* Position it relative to the nearest positioned ancestor (header in this case) */
+  top: 10px; /* Set a small distance from the top */
   right: 30px; /* 30px from the right border */
-  transform: translateY(-50%); /* Adjust vertical position to truly center */
   width: 40px;
   height: 40px;
   background-color: #cccccc; /* Default background color */
   border-radius: 50%; /* Make it a circle */
 }
+
 .available {
   background-color: #ff545f; /* Change background color when class is available */
+}
+header {
+  position: relative; /* Ensure the header is relatively positioned */
+  height: 60px; /* Adjust this height as needed */
 }
 
